@@ -18,45 +18,6 @@ $the_query = new WP_Query($args);
 </div>
 
 
-<div class="slider-icons-categories">
-			<?php
-
-
-			if ($the_query->have_posts()):
-				while ($the_query->have_posts()):
-					$the_query->the_post();
-					$slug = basename(get_permalink());
-					$title = get_the_title();
-					$image_icon = asset("images/no-image.svg");
-					$link = get_permalink();
-
-
-					$file_exist = sprintf("images/images-categories-prods/icon-%s.png", $slug);
-
-					if (file_exists(__DIR__ . '/assets/' . $file_exist)) {
-						$image_icon = asset($file_exist);
-					}
-
-					echo sprintf('
-					<div class="boxes-cats">
-						<a href="%s">
-							<div>
-								<img src="%s"  alt="%s">
-								<h2>%s</h2>
-							</div>            
-						</a>                    
-					</div>
-
-				', $link, $image_icon, $title, $title);
-				endwhile;
-			endif; ?>
-
-
-			
-
-		</div>
-
-
 <main class="main main-categories">
 	<!-- section -->
 	<section class="container">

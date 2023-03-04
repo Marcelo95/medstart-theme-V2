@@ -7,7 +7,7 @@
                 <a class="navbar-brand d-none d-sm-block flex-shrink-0" href="<?php echo home_url(); ?>">
 
                     <?php if (get_post_type() == "produtos" && is_single()) : ?>
-                        <img class="logo" src="<?php echo asset('images/logo-white.svg'); ?>" alt="Logo">
+                        <img class="logo" src="<?php echo asset('images/logo-white.png'); ?>" alt="Logo">
                     <?php else : ?>
                         <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
                     <?php endif; ?>

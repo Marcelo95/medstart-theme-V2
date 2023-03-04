@@ -12,6 +12,7 @@ $args = array(
 $categories = get_categories($args);
 
 
+
 ?>
 
 <main role="main">
@@ -19,31 +20,9 @@ $categories = get_categories($args);
         <?php custom_breadcrumbs(); ?>
     </div>
 
-    <div class="slider-icons-categories">
-
-        <?php foreach ($categories as $category) {
-                echo sprintf('
-                <div class="boxes-cats">
-                    <a href="%s">
-                        <div>
-                            <img src="%s"  alt="">
-                            <h2>%s</h2>
-                        </div>            
-                    </a>                    
-                </div>
-
-
-            ', get_category_link($category->term_id), asset(sprintf("../templates/categories/%s/icon.png", $category->slug)), $category->name);
-
-
-            }
-            ?>
-
-
-    </div>
     <div class="banner-categories">
         <div class="container">
-            <h1> A Medical San tem linhas completas de equipamentos de alta performance. </h1>
+            <h1> A MedStart tem os equipamentos ideais para o começo do seu sucesso! </h1>
 
             <h2>
                 Escolha a tecnologia e confira nossos produtos:

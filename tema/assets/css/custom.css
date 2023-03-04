@@ -67,11 +67,10 @@ section.products > .container > h2 {
 
 #collapseFormSearch {
     position: absolute;
-    top: -12px;
+    top: -18px;
     left: 0;
     width: 100%;
     height: 83px;
-    background: #fff;
 }
 
 .single-produtos #collapseFormSearch {
@@ -138,12 +137,14 @@ span.navbar-toggler-icon {
     background: red;
 }
 
-
 header.header-style-1 {
-    background: #fff;
+    background: linear-gradient(42deg, #31F1C5 28.13%, #230077 70.96%);
+    box-shadow: none;
+    animation: bg-slide2 5s infinite alternate linear;
+    box-shadow: none !important;
+    background: rgb(49,241,197);
+    background: linear-gradient(10deg, rgba(49,241,197,1) 6%, rgba(35,0,119,1) 86%, rgba(35,0,119,1) 69%);
     background-size: 100%;
-    padding-top: 25px;
-    /* padding-bottom: 25px; */
     position: relative;
     z-index: 999999;
 }
@@ -297,7 +298,7 @@ img.rectangle {
 }
 
 .block-text {
-    color: #000;
+    color: #fff;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
@@ -769,10 +770,13 @@ section.box-lancamento .wp-block-column {
     position: relative;
     z-index: 9999;
     height: auto;
+    background: linear-gradient(75deg, rgba(49,241,197,1) 7%, rgba(35,0,119,1) 86%, rgba(35,0,119,1) 69%);
+    padding-top: 169px;
+    background-position: 0px -16%;
 }
 
 .single-produtos .imagem-frente {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -2008,7 +2012,6 @@ main.main.main-categories h2 {
 }
 
 .lista-categories-prods > div {
-    background: black;
     margin-bottom: 10px;
     border-radius: 20px;
     display: flex;
@@ -2016,6 +2019,7 @@ main.main.main-categories h2 {
     justify-content: center;
     flex-wrap: wrap;
     background-size: cover;
+    background: linear-gradient(180deg, #2E62BA 0%, #1F0586 100%);
 }
 
 .lista-categories-prods > div.item-ultraplace {
@@ -2087,10 +2091,14 @@ main.main.main-categories h2 {
 
 .lista-categories-prods > div > div.logo-and-text a {
     color: #fff;
+    border: 1px solid;
+    height: auto;
+    padding: 10px;
+    margin: 20px auto;
 }
 
 .lista-categories-prods > div > div.logo-and-text a:hover {
-    color: blue;
+    color: #20dfff;
 }
 
 
@@ -2405,8 +2413,9 @@ header input.form-control.rounded-end.pe-5 {
 
 @media (max-width: 576px){
 .single-produtos header.header-style-1 {
-    background: #fff;
-    position: relative;
+    /* background: #fff; */
+    /* position: relative; */
+    /* background: linear-gradient(10deg, rgba(49,241,197,1) 6%, rgba(35,0,119,1) 86%, rgba(35,0,119,1) 69%); */
 }
 
 
@@ -2547,9 +2556,10 @@ div#header_menu_all_departments_top a:hover {
 }
 
 .menu-principal a {
-    color: #202020;
+    color: #ffffff;
     font-size: 17px;
     font-weight: 600;
+    padding: 4px;
 }
 
 a.dropdown-item {
@@ -2557,8 +2567,8 @@ a.dropdown-item {
 }
 
 .menu-principal a:hover {
-    color: #ffffff !important;
-    background: #00367E;
+    color: #00367E !important;
+    background: #fff;
     border-radius: 20px;
     display: inline-block;
 }
@@ -2570,8 +2580,8 @@ a.dropdown-item {
 }
 
 .menu-principal .current-menu-item  a{
-    color: #ffffff !important;
-    background: #00367E;
+    color: #00367E !important;
+    background: #fff;
     border-radius: 20px;
 }
 
@@ -2951,7 +2961,7 @@ ul#menu-menu-topo {
 }
 
 footer {
-    background: #000;
+    background: #230077;
     color: #fff;
     position: relative;
 }
