@@ -12,30 +12,37 @@
 
     <div class="container ">
 
+  
+            <div class="text-default js-scroll fade-in-bottom">
+                <?php get_template_part(sprintf("templates/produtos/%s/content", get_post_field('post_name', get_post())), "priority"); ?>
+            </div>
 
-        <div class="text-default js-scroll fade-in-bottom">
-            <?php get_template_part(sprintf("templates/produtos/%s/content", get_post_field('post_name', get_post())), "priority"); ?>
+            <p class="text-center mt-5 mb-5 js-scroll fade-in-bottom">
+                <a href="#orcamento" class="botao-6">
+                    Quero meu orçamento
+                </a>
+
+            </p>
+
+            <div class="bg-azul">
+
+
+            <?php get_template_part("templates/produtos/content-itens"); ?>
+
+            <?php get_template_part(sprintf("templates/produtos/%s/content-11", get_post_field('post_name', get_post()))); ?>
+
+
+            <?php get_template_part(sprintf("templates/produtos/content-slider-videos", get_post_field('post_name', get_post()))); ?>
+
+
+
+
+            <?php get_template_part(sprintf("templates/produtos/%s/content-12", get_post_field('post_name', get_post()))); ?>
+
+
+
+
         </div>
-
-        <p class="text-center mt-5 mb-5 js-scroll fade-in-bottom">
-            <a href="#orcamento" class="botao-6">
-                Quero meu orçamento
-            </a>
-
-        </p>
-
-
-        <?php get_template_part(sprintf("templates/produtos/%s/content-10", get_post_field('post_name', get_post()))); ?>
-
-
-        <?php get_template_part(sprintf("templates/produtos/%s/content-11", get_post_field('post_name', get_post()))); ?>
-
-
-        <?php get_template_part(sprintf("templates/produtos/%s/content-12", get_post_field('post_name', get_post()))); ?>
-
-
-        <?php get_template_part(sprintf("templates/produtos/content-slider-videos", get_post_field('post_name', get_post()))); ?>
-
 
 
 

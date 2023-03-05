@@ -1,7 +1,7 @@
-<section class="texto-colorido-1 js-scroll fade-in-bottom">
+<section class="js-scroll fade-in-bottom">
         <div class="container text-center">
-                <p>Tenha o Criodermis
-                        na sua clínica ou seja um
-                        revendedor desse sucesso! </p>
+                <h2>Como funciona o
+                        <?php the_title(); ?>
+                </h2>
         </div>
 </section>
