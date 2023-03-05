@@ -9,9 +9,6 @@
             alt="">
     </div>
 
-    <?php get_template_part(sprintf("templates/produtos/%s/content-13", get_post_field('post_name', get_post()))); ?>
-
-
 
     <div class="container ">
 
@@ -28,56 +25,19 @@
         </p>
 
 
+        <?php get_template_part(sprintf("templates/produtos/%s/content-10", get_post_field('post_name', get_post()))); ?>
+
+
+        <?php get_template_part(sprintf("templates/produtos/%s/content-11", get_post_field('post_name', get_post()))); ?>
+
+
+        <?php get_template_part(sprintf("templates/produtos/%s/content-12", get_post_field('post_name', get_post()))); ?>
+
+
         <?php get_template_part(sprintf("templates/produtos/content-slider-videos", get_post_field('post_name', get_post()))); ?>
 
 
-        <div class="prod-360">
-            <?php get_template_part(sprintf("templates/produtos/%s/content-360", get_post_field('post_name', get_post()))); ?>
-        </div>
 
-
-
-
-    </div>
-
-
-    <?php get_template_part(sprintf("templates/produtos/%s/content-carroussel-text", get_post_field('post_name', get_post()))); ?>
-
-
-    <?php get_template_part(sprintf("templates/produtos/%s/content-14", get_post_field('post_name', get_post()))); ?>
-
-    <?php get_template_part(sprintf("templates/produtos/%s/content-video", get_post_field('post_name', get_post()))); ?>
-
-
-    <?php get_template_part(sprintf("templates/produtos/%s/content-12", get_post_field('post_name', get_post()))); ?>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-9", get_post_field('post_name', get_post()))); ?>
-
-    </div>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-hakon", get_post_field('post_name', get_post()))); ?>
-
-    </div>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-ethernia-cold", get_post_field('post_name', get_post()))); ?>
-
-    </div>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-omer-premium", get_post_field('post_name', get_post()))); ?>
-
-    </div>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-ultramed", get_post_field('post_name', get_post()))); ?>
-
-    </div>
-
-    <div class="js-scroll fade-in-bottom">
-        <?php get_template_part(sprintf("templates/produtos/%s/content-omer-smart", get_post_field('post_name', get_post()))); ?>
 
     </div>
 
@@ -86,10 +46,6 @@
     <div class="js-scroll fade-in-bottom">
         <?php get_template_part("templates/produtos/content-10"); ?>
     </div>
-
-
-    <?php get_template_part(sprintf("templates/produtos/%s/content-11", get_post_field('post_name', get_post()))); ?>
-
 
 
 
@@ -199,7 +155,9 @@
                 </button>
             </div>
             <div id="modalBody" class="modal-body">
-                <iframe id="iframeURL" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  frameborder="0" style=" width: 100%; min-height: calc(100vh - 200px); "></iframe>
+                <iframe id="iframeURL" allowfullscreen
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"
+                    style=" width: 100%; min-height: calc(100vh - 200px); "></iframe>
             </div>
         </div>
     </div>
@@ -217,14 +175,14 @@
             $('#exampleModal').modal('toggle');
             $('#iframeURL').attr("src", url);
 
-            
+
         }
 
 
-        $(".list-links a").on("click", function(e){
+        $(".list-links a").on("click", function (e) {
             e.preventDefault();
 
-            showPopupIframe($(this).text(), $(this).attr("href"),  $(this).find("i").attr("class") );
+            showPopupIframe($(this).text(), $(this).attr("href"), $(this).find("i").attr("class"));
         })
 
     })(jQuery);
