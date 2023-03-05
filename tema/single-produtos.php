@@ -3,9 +3,7 @@
 <section class="page-content">
 
     <div class="banner-principal">
-        <img class="imagem-fundo"
-            src="<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal-fundo.svg", get_post_field('post_name', get_post()))); ?>"
-            alt="">
+
         <img class="imagem-frente js-scroll fade-in-bottom scrolled"
             src="<?php echo asset(sprintf("../templates/produtos/%s/images/banner-principal.png", get_post_field('post_name', get_post()))); ?>"
             alt="">
