@@ -147,9 +147,9 @@ function metabox_for_produtos()
 
   $cmb_demo->add_field(
     array(
-      'name' => __('Vídeos de treinamento', 'cmb2'),
+      'name' => __('Vídeo de como funciona (Youtube)', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
-      'id' => $prefix . 'link_videos_de_treinamento',
+      'id' => $prefix . 'link_videos_de_como_funciona',
       'type' => 'text_url',
       'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
       // Array of allowed protocols
@@ -160,6 +160,8 @@ function metabox_for_produtos()
 
 
 }
+
+//Disabilitado videos do youtube
 add_action('cmb2_admin_init', 'metabox_for_produtos');
 function metabox_for_produtos_2()
 {
@@ -201,7 +203,9 @@ function metabox_for_produtos_2()
 
 
 }
-add_action('cmb2_admin_init', 'metabox_for_produtos_2');
+
+//Disabilitado videos do youtube
+//add_action('cmb2_admin_init', 'metabox_for_produtos_2');
 
 
 function metabox_for_feedbacks()

@@ -12,19 +12,19 @@
 
     <div class="container ">
 
-  
-            <div class="text-default js-scroll fade-in-bottom">
-                <?php get_template_part(sprintf("templates/produtos/%s/content", get_post_field('post_name', get_post())), "priority"); ?>
-            </div>
 
-            <p class="text-center mt-5 mb-5 js-scroll fade-in-bottom">
-                <a href="#orcamento" class="botao-6">
-                    Quero meu orçamento
-                </a>
+        <div class="text-default js-scroll fade-in-bottom">
+            <?php get_template_part(sprintf("templates/produtos/%s/content", get_post_field('post_name', get_post())), "priority"); ?>
+        </div>
 
-            </p>
+        <p class="text-center mt-5 mb-5 js-scroll fade-in-bottom">
+            <a href="#orcamento" class="botao-6">
+                Quero meu orçamento
+            </a>
 
-            <div class="bg-azul">
+        </p>
+
+        <div class="bg-azul">
 
 
             <?php get_template_part("templates/produtos/content-itens"); ?>
