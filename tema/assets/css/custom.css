@@ -3317,9 +3317,9 @@ div[aria-label="Slide"] {
 
 .botao-7 {
     position: relative;
-    color: #0085FF;
-    background: #fff;
-    border: 1px solid #ffffff;
+    color: #fff;
+    background: #230077;
+    border: 1px solid #230077;
     text-decoration: none;
     padding: 16px 24px;
     width: 255px;
@@ -3902,7 +3902,7 @@ section.box-lancamento.estilo-1 {
     background: url();
     /* padding: 76px 10px; */
     text-align: center;
-    color: #fff;
+    color: #230077;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -3914,17 +3914,17 @@ section.box-lancamento.estilo-1 {
 
 .content-10-text .box-center p {
     margin-bottom: 31px;
-    color: #fff;
+    color: #230077;
     font-size: 1.7rem;
 }
 
 section.content-10-text > .container > div {
     margin-bottom: 15px;
-    margin-top: 15px;
-    background: url(../../assets/images/bg-azul.jpg) center no-repeat;
+    /* margin-top: 15px; */
+    background: #31F1C5;
     width: 100%;
     background-size: cover;
-    border-radius: 23px;
+    /* border-radius: 23px; */
     padding: 50px 20px;
 }
 
