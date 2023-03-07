@@ -47,24 +47,12 @@
                     <?php dynamic_sidebar('widget_3_3_footer'); ?>
                 <?php endif; ?>
 
-                <div class="apps">
-                    <h2>Baixe o app</h2>
 
-                    <div class="d-flex">
-                    <a href="https://apps.apple.com/br/app/medical-san/id1460618465?l=en" target="_blank"> 
-                        <img class="logo" src="<?php echo asset('images/apple.png?v1'); ?>" alt="Logo App Store">
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.manptecnologia.medicalsanconnect&hl=pt_BR&gl=US&pli=1" target="_blank"> 
-                        <img src="<?php echo asset('images/android.png?v1'); ?>" alt="Logo Google Play">
-                    </a>
-           
-                    </div>
-                </div>
 
                 <h2>
-                    <a href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">
-                        386 Business Park <br>
-                        Rodovia BR-386, km 357. Estrela - RS
+                    <a class="point-marker" href="https://goo.gl/maps/tVHrkVCUxUnRbAxT9" target="_blank" rel="noopener noreferrer">
+                       <i class="fa fa-map-marker	"></i> <span>386 Business Park <br>
+                        Rodovia BR-386, km 357. Estrela - RS</span>
                     </a>
 
 

@@ -31,25 +31,25 @@ function produtos_custom_post()
     );
 
     $args = array(
-        'taxonomies' => ["post_tag","category","departamentos", "marcas", "catalogos"],
+        'taxonomies' => ["post_tag", "category", "departamentos", "marcas", "catalogos"],
         'labels' => $labels,
         'description' => 'Minha loja',
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-cart',
         'supports' => array(
-            'title', 
-            'editor', 
-            'excerpt', 
+            'title',
+            'editor',
+            'excerpt',
             //'author', 
             //'custom-fields', 
-            'post-formats', 
-            'thumbnail')
+            'post-formats',
+            'thumbnail'
+        )
 
     );
 
     register_post_type('produtos', $args);
- 
 }
 
 //add_action('init', 'feedbacks_custom_post');
@@ -82,29 +82,29 @@ function feedbacks_custom_post()
     );
 
     $args = array(
-        'taxonomies' => ["post_tag","category"],
+        'taxonomies' => ["post_tag", "category"],
         'labels' => $labels,
         'description' => 'Minha loja',
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-clipboard',
         'supports' => array(
-            'title', 
-            'editor', 
-            'excerpt', 
+            'title',
+            'editor',
+            'excerpt',
             //'author', 
             //'custom-fields', 
-            'post-formats', 
-            'thumbnail')
+            'post-formats',
+            'thumbnail'
+        )
 
     );
 
     register_post_type('feedbacks', $args);
- 
 }
 
 
-add_theme_support( 'post-thumbnails',['post','produtos',"feedbacks"] );
+add_theme_support('post-thumbnails', ['post', 'produtos', "feedbacks"]);
 
 
 // Register Custom 
@@ -142,12 +142,12 @@ function custom_taxonomy()
         'show_tagcloud'              => true,
         'query_var' => true,
         'rewrite' => array(
-            'slug' => 'departamentos', 
-            'with_front' => false, 
-            'hierarchical' => true 
+            'slug' => 'departamentos',
+            'with_front' => false,
+            'hierarchical' => true
         ),
     );
-    register_taxonomy('departamentos', 'produtos', $args);
+    //register_taxonomy('departamentos', 'produtos', $args);
 
     $labels = array(
         'name'                       => _x('Marcas', 'Produto General Name', 'text_domain'),
@@ -181,11 +181,11 @@ function custom_taxonomy()
         'query_var' => true,
         'rewrite' => array(
             'slug' => 'marcas',
-            'with_front' => false, 
+            'with_front' => false,
             'hierarchical' => true
         ),
     );
-    register_taxonomy('marcas', 'produtos', $args);
+    //register_taxonomy('marcas', 'produtos', $args);
 
 
     $labels3 = array(
@@ -220,13 +220,61 @@ function custom_taxonomy()
         'query_var' => true,
         'rewrite' => array(
             'slug' => 'catalogos',
-            'with_front' => false, 
+            'with_front' => false,
             'hierarchical' => true
         ),
     );
-    register_taxonomy('catalogos', 'produtos', $args3);
+    //register_taxonomy('catalogos', 'produtos', $args3);
 
 
+    $labels = array(
+        'name' => _x('Produtos', 'post type general name'),
+        'singular_name' => _x('Produto', 'post type singular name'),
+
+        'all_items'                  => __('Produtos', 'text_domain'),
+        'parent_item'                => __('Parent Item', 'text_domain'),
+        'parent_item_colon'          => __('Parent Item:', 'text_domain'),
+        'add_new'              => __('Adicionar produto', 'text_domain'),
+        'new_item_name'              => __('Adicionar produto', 'text_domain'),
+        'add_new_item'               => __('Adicionar produto', 'text_domain'),
+        'edit_item'                  => __('Edit Item', 'text_domain'),
+        'update_item'                => __('Update Item', 'text_domain'),
+        'view_item'                  => __('View Item', 'text_domain'),
+        'separate_items_with_commas' => __('Separate items with commas', 'text_domain'),
+        'add_or_remove_items'        => __('Add or remove items', 'text_domain'),
+        'choose_from_most_used'      => __('Choose from the most used', 'text_domain'),
+        'popular_items'              => __('Popular Items', 'text_domain'),
+        'search_items'               => __('Search Items', 'text_domain'),
+        'not_found'                  => __('Not Found', 'text_domain'),
+        'no_terms'                   => __('No items', 'text_domain'),
+        'items_list'                 => __('Items list', 'text_domain'),
+        'items_list_navigation'      => __('Items list navigation', 'text_domain'),
+
+    );
+
+    $args = array(
+        'taxonomies' => [
+            "post_tag",
+            "category",
+            //"departamentos", 
+            //"marcas", 
+            //"catalogos"
+        ],
+        'labels' => $labels,
+        'description' => 'Minha loja',
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-cart',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            //'author', 
+            //'custom-fields', 
+            'post-formats',
+            'thumbnail'
+        )
+
+    );
 }
 add_action('init', 'custom_taxonomy');
-
