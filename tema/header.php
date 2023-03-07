@@ -32,4 +32,4 @@
 
     <main class="page-wrapper">
 
-        <?php get_template_part("templates/header"); ?>
+        <?php if('produtos' != get_post_type()) : get_template_part("templates/header", get_post_type( get_the_ID() )); endif; ?>

@@ -16,7 +16,8 @@ function yourprefix_register_demo_metabox()
       // or Post type
       'taxonomies' => array('marcas', 'departamentos', 'catalogos'),
 
-    ));
+    )
+  );
 
   $cmb_demo->add_field(
     array(
@@ -28,7 +29,8 @@ function yourprefix_register_demo_metabox()
         'url' => false,
         'add_upload_file_text' => 'Adicionar imagem'
       ),
-    ));
+    )
+  );
 
   $cmb_demo = new_cmb2_box(
     array(
@@ -38,7 +40,8 @@ function yourprefix_register_demo_metabox()
       // or Post type
       'taxonomies' => array('catalogos'),
 
-    ));
+    )
+  );
 
   $cmb_demo->add_field(
     array(
@@ -50,8 +53,8 @@ function yourprefix_register_demo_metabox()
         'url' => true,
         'add_upload_file_text' => 'Adicionar arquivo'
       ),
-    ));
-
+    )
+  );
 }
 
 
@@ -64,7 +67,8 @@ function metabox_for_produtos()
       'id' => $prefix . 'metabox',
       'title' => __('Detalhes do produto', 'cmb2'),
       'object_types' => array('produtos'), // Post type
-    ));
+    )
+  );
 
   $cmb_demo->add_field(
     array(
@@ -79,7 +83,23 @@ function metabox_for_produtos()
       ),
       'sanitization_cb' => 'absint',
       'escape_cb' => 'absint',
-    ));
+    )
+  );
+
+  $cmb_demo->add_field(
+    array(
+      'name' => __('Vídeo de como funciona (Youtube)', 'cmb2'),
+      'desc' => __('Link do vídeo (Youtube)', 'cmb2'),
+      'id' => $prefix . 'link_videos_de_como_funciona',
+      'type' => 'text_url',
+      'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
+      // Array of allowed protocols
+      'attributes' => array(
+        'placeholder' => 'Digite aqui',
+      )
+    )
+  );
+
 
   $cmb_demo->add_field(
     array(
@@ -92,7 +112,8 @@ function metabox_for_produtos()
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       )
-    ));
+    )
+  );
   $cmb_demo->add_field(
     array(
       'name' => __('Ficha Técnica', 'cmb2'),
@@ -104,7 +125,8 @@ function metabox_for_produtos()
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       )
-    ));
+    )
+  );
 
   $cmb_demo->add_field(
     array(
@@ -117,7 +139,8 @@ function metabox_for_produtos()
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       )
-    ));
+    )
+  );
 
   $cmb_demo->add_field(
     array(
@@ -130,7 +153,8 @@ function metabox_for_produtos()
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       )
-    ));
+    )
+  );
 
   $cmb_demo->add_field(
     array(
@@ -143,22 +167,22 @@ function metabox_for_produtos()
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       )
-    ));
+    )
+  );
 
   $cmb_demo->add_field(
     array(
-      'name' => __('Vídeo de como funciona (Youtube)', 'cmb2'),
+      'name' => __('Vídeo de treinamento', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
-      'id' => $prefix . 'link_videos_de_como_funciona',
+      'id' => $prefix . 'link_videos_de_treinamento',
       'type' => 'text_url',
       'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
       // Array of allowed protocols
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       )
-    ));
-
-
+    )
+  );
 }
 
 //Disabilitado videos do youtube
@@ -172,7 +196,8 @@ function metabox_for_produtos_2()
       'id' => $prefix . 'metabox',
       'title' => __('Videos do Youtube', 'cmb2'),
       'object_types' => array('produtos'), // Post type
-    ));
+    )
+  );
 
   $group_field_id = $cmb_demo->add_field(
     array(
@@ -185,7 +210,8 @@ function metabox_for_produtos_2()
         'remove_button' => __('Remover', 'cmb2'),
         'sortable' => true,
       ),
-    ));
+    )
+  );
 
 
 
@@ -200,8 +226,6 @@ function metabox_for_produtos_2()
       'placeholder' => 'Digite aqui',
     )
   ));
-
-
 }
 
 //Disabilitado videos do youtube
@@ -217,7 +241,8 @@ function metabox_for_feedbacks()
       'id' => $prefix . 'metabox',
       'title' => __('Informações', 'cmb2'),
       'object_types' => array('feedbacks'), // Post type
-    ));
+    )
+  );
 
   $cmb_demo->add_field(
     array(
@@ -228,7 +253,8 @@ function metabox_for_feedbacks()
       'attributes' => array(
         'required' => 'required',
       )
-    ));
+    )
+  );
 
   $cmb_demo->add_field(
     array(
@@ -239,8 +265,7 @@ function metabox_for_feedbacks()
       'attributes' => array(
         'required' => 'required',
       )
-    ));
-
-
+    )
+  );
 }
 add_action('cmb2_admin_init', 'metabox_for_feedbacks');

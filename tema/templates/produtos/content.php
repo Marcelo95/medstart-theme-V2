@@ -1,23 +1,28 @@
-<?php
+<section class="page-content">
 
-if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="container ">
 
-    <?php $content = get_the_content();
-    
-    echo sprintf("%s/content", get_post_field('post_name', get_post()));
-    
-    ?>
-    <?php get_template_part(sprintf("%s/content", get_post_field('post_name', get_post())), "default");?>
+        <?php
 
 
-    <?php endwhile; ?>
+        if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<?php else : ?>
+                <?php echo get_the_content(); ?>
 
-    <!-- article -->
-    <article>
-        <h2><?php _e('Sorry, nothing to display.'); ?></h2>
-    </article>
-    <!-- /article -->
+            <?php endwhile; ?>
 
-<?php endif; ?>
+        <?php else : ?>
+
+            <!-- article -->
+            <article>
+                <h2><?php _e('Sorry, nothing to display.'); ?></h2>
+            </article>
+            <!-- /article -->
+
+        <?php endif; ?>
+
+    </div>
+
+</section>
+
+

@@ -1,15 +1,23 @@
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<section class="page-content">
 
 
-        <div class="page-content">
-
-            <div class="entry">
-                <?php the_content(); ?>
-            </div>
+    <?php
 
 
-        </div>
-    <?php endwhile;
-else : ?>
+    if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<?php endif; ?>
+            <?php echo get_the_content(); ?>
+
+        <?php endwhile; ?>
+
+    <?php else : ?>
+
+        <!-- article -->
+        <article>
+            <h2><?php _e('Sorry, nothing to display.'); ?></h2>
+        </article>
+        <!-- /article -->
+
+    <?php endif; ?>
+
+</section>

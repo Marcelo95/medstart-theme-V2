@@ -1,6 +1,6 @@
-<header class="header-style-1 js-scroll fade-in scrolled">
+<header class="header-style-0 js-scroll fade-in scrolled">
 
-    <div class="navbar-sticky shadow-sm ">
+    <div class="navbar-sticky shadow-sm-disable ">
 
         <div class="navbar navbar-expand-lg nav-top">
             <div class="container">
@@ -80,10 +80,5 @@
             </div>
         </div>
     </div>
-    <?php if (get_post_type() == "produtos" && is_single()) : ?>
-        <div class="container desktop">
-            <?php custom_breadcrumbs(); ?>
-        </div>
-    <?php endif; ?>
-
+ 
 </header>
