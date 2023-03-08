@@ -1,3 +1,30 @@
+
+<div class="navbar navbar-expand-lg nav-bottom mt-n2 pt-0 pb-2" style="position: absolute;">
+    <div class="collapse navbar-collapse navbar-stuck-menu " id="navbarCollapse">
+        <div class="container">
+
+            <button class="navbar-toggler toggler-mobile float-end m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="true" aria-controls="navbarCollapse">
+                <i class="material-icons" style="font-size: 36px;margin-left: -7px;">close</i>
+            </button>
+            <!-- Search-->
+            <form action="<?php echo home_url(); ?>" class="input-group d-lg-none my-3">
+                <input name="s" class="form-control rounded-start" type="text" placeholder="Pesquisar por...">
+                <button type="submit" class="style-hidden-button"><i class="material-icons position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3">search</i></button>
+            </form>
+
+            <div class="menu-links mobile">
+                <!-- Primary menu-->
+                <?php menu1(); ?>
+            </div>
+
+
+        </div>
+        <div class="languages mobile">
+            <?php echo do_shortcode('[language-switcher]'); ?>
+
+        </div>
+    </div>
+</div>
 <header class="header-style-0 header-style-products header-style-1 js-scroll fade-in scrolled">
 
     <div class="navbar-sticky shadow-sm-disable ">
@@ -64,30 +91,3 @@
     <?php endif; ?>
 
 </header>
-
-<div class="navbar navbar-expand-lg nav-bottom mt-n2 pt-0 pb-2">
-    <div class="collapse navbar-collapse navbar-stuck-menu " id="navbarCollapse">
-        <div class="container">
-
-            <button class="navbar-toggler toggler-mobile float-end m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="true" aria-controls="navbarCollapse">
-                <i class="material-icons" style="font-size: 36px;margin-left: -7px;">close</i>
-            </button>
-            <!-- Search-->
-            <form action="<?php echo home_url(); ?>" class="input-group d-lg-none my-3">
-                <input name="s" class="form-control rounded-start" type="text" placeholder="Pesquisar por...">
-                <button type="submit" class="style-hidden-button"><i class="material-icons position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3">search</i></button>
-            </form>
-
-            <div class="menu-links mobile">
-                <!-- Primary menu-->
-                <?php menu1(); ?>
-            </div>
-
-
-        </div>
-        <div class="languages mobile">
-            <?php echo do_shortcode('[language-switcher]'); ?>
-
-        </div>
-    </div>
-</div>
