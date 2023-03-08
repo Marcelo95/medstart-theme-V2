@@ -74,7 +74,6 @@
 </footer>
 
 
-</main>
 
 <script src="<?php echo asset('bootstrap/js/bootstrap.min.js'); ?>"></script>
 <script src="<?php echo asset('js/script.js'); ?>"></script>

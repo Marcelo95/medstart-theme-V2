@@ -30,5 +30,4 @@
 
 <body <?php body_class(is_admin_bar_showing() ? "is_admin_bar_showing" : ""); ?>>
 
-    <?php if ('produtos' != get_post_type() || is_search() || is_archive() ) : get_template_part("templates/header", get_post_type(get_the_ID()));
-    endif; ?>
+        <?php get_template_part("templates/header-categorias");?>

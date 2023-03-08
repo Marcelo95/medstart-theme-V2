@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("categorias"); ?>
 
 <?php
 
@@ -15,7 +15,7 @@ $categories = get_categories($args);
 
 ?>
 
-<main role="main">
+<main class="main main-categories">
     <div class="mt-4 container desktop">
         <?php custom_breadcrumbs(); ?>
     </div>
@@ -31,25 +31,33 @@ $categories = get_categories($args);
     </div>
 
     <section class="container">
-        <div class="lista-categories">
+        <div class="lista-categories-prods">
 
             <?php foreach ($categories as $category) {
+
+
+
+                $slug = $category->slug;
+                $image_prod = asset(sprintf("../templates/categories/images/png/%s.png", $category->slug));
+                $name = $category->name;
+                $link = get_category_link($category->term_id);
+
                 echo sprintf('
+                <div class="item-%s" >
                 <div>
-                    <a href="%s">
-                        <div>
-                            <img  src="%s"  alt="">
+                        <div class="logo-image">
+                            <img class="imagem-frente js-scroll fade-in-bottom scrolled" src="%s" >
                         </div>
-                        <div>
-                            <h2>%s <i class="fa fa-angle-right"></i></h2>
-                        </div>                
-                    </a>                    
-                </div>
+                        <div class="logo-and-text">
+                            <h2>%s  </h2>
+                            <a href="%s" class="botao-5">
+                                Conheça
+                            </a>
+                        </div>
+                    
+                </div></div>
 
-
-            ', get_category_link($category->term_id), asset(sprintf("../templates/categories/images/png/%s.png", $category->slug)), $category->name);
-
-
+            ', $slug, $image_prod, $name, $link);
             }
             ?>
 

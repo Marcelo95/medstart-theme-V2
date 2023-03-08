@@ -1,4 +1,4 @@
-<?php get_header();
+<?php get_header("categorias");
 $current_term = get_category(get_query_var('cat'));
 
 $current_category = get_queried_object(); ////getting current category
@@ -13,12 +13,15 @@ $the_query = new WP_Query($args);
 
 ?>
 
+
+<main class="main main-categories">
+
+
 <div class="mt-5 container desktop">
 	<?php custom_breadcrumbs(); ?>
 </div>
 
 
-<main class="main main-categories">
 	<!-- section -->
 	<section class="container">
 
@@ -46,7 +49,8 @@ $the_query = new WP_Query($args);
 
 					echo sprintf('
 					<div class="item-%s" %s >
-							<div>
+					<div>
+							<div class="logo-image">
 								<img class="imagem-frente js-scroll fade-in-bottom scrolled" src="%s" >
 							</div>
 							<div class="logo-and-text">
@@ -56,7 +60,7 @@ $the_query = new WP_Query($args);
 								</a>
 							</div>
 						
-					</div>
+					</div></div>
 
 				', $slug, $image_background, $image_prod, $logo_prod, $link);
 				endwhile;

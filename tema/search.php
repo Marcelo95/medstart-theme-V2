@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="container archive">
+<section class="container main-page archive">
 
 	<div class="mt-5 mb-5">
 	<h1><?php echo sprintf(__('Você pesquisou por "%s"'), get_search_query(), $wp_query->found_posts); ?></h1>

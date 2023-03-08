@@ -147,7 +147,8 @@ header button.style-hidden-button.close-right i {
 
 
 span.navbar-toggler-icon {
-    background: red;
+     background: transparent url("../../assets/images/header-filete.png") center no-repeat;
+
 }
 
 header {
@@ -159,8 +160,18 @@ header {
     background: linear-gradient(10deg, rgba(49,241,197,1) 6%, rgba(35,0,119,1) 86%, rgba(35,0,119,1) 69%);
     background-size: 100%;
     position: relative;
-    z-index: 99999;
+    z-index: 99998;
 }
+
+.bg-header-categorias {
+     background: transparent url("../../assets/images/header-filete.png") center no-repeat;
+     padding-bottom: 20%;
+     background-position: bottom;
+     background-size: contain;
+}
+
+
+
 
 header.header-style-1 {
     position: absolute;
@@ -171,6 +182,15 @@ header.header-style-1 {
     background-size: cover;
     background-position: bottom right;
     padding-bottom: 51px;
+}
+.main-page {
+    position: relative;
+    z-index: 99998;
+    margin-top: -3%;
+}
+header.header-style-0.header-style-1 {
+    position: relative;
+    top: 0 !important;
 }
 
 header .navbar-sticky {
@@ -194,10 +214,6 @@ img.rectangle {
     margin-bottom: -2px;
 }
 
-.nav-top {
-    /* padding: 29px 0px; */
-    /* z-index: 8; */
-}
 
 .nav-top a{
     color: #fff;
@@ -520,7 +536,7 @@ a.navbar-tool-icon-box.bg-secondary.dropdown-toggle i {
     height: 300px;
     margin-top: -260px;
     background: url('../../assets/images/bg-footer.png') left bottom no-repeat;
-    background-size: contain;
+    background-size: 100%;
     margin-bottom: -3px;
     z-index: -1;
 }
@@ -745,6 +761,7 @@ section.box-lancamento .wp-block-column {
 
 .archive h1 {
     font-weight: 600;
+    color: #1F0586;
 }
 
 .page-blog.archive article {
@@ -1980,7 +1997,9 @@ section.sem-limites-de-disparos p b {
 
 .lista-categories {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .lista-categories img {
@@ -1993,13 +2012,10 @@ section.sem-limites-de-disparos p b {
 .lista-categories > div {
     margin-bottom: 16px;
     background: #FFFFFF;
-    border: 1px solid #2E62BA;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     border-radius: 30px;
     min-height: 176px;
-    background: linear-gradient(180deg, #2E62BA 0%, #1F0586 100%);
+    width: 50%;
+    padding: 10px;
 }
 
 .lista-categories a {
@@ -2009,6 +2025,8 @@ section.sem-limites-de-disparos p b {
     text-decoration: none;
     text-transform: uppercase;
     flex-wrap: wrap;
+    background: linear-gradient(180deg, #2E62BA 0%, #1F0586 100%);
+    border-radius: 30px;
 }
 
 .lista-categories a h2 {
@@ -2019,6 +2037,7 @@ section.sem-limites-de-disparos p b {
     justify-content: center;
     margin-top: 10px;
     text-align: center;
+    align-items: center;
 }
 
 .lista-categories a h2 i {
@@ -2027,7 +2046,7 @@ section.sem-limites-de-disparos p b {
 }
 
 .lista-categories > div:nth-child(2n+1) h2 {
-    color: #2E62BA;
+    /* color: #2E62BA; */
 }
 
 .lista-categories a > div {
@@ -2048,14 +2067,16 @@ section.sem-limites-de-disparos p b {
 }
 
 .lista-categories > div:nth-child(2n+1) {
-    background: #ffff;
+    /* background: #ffff; */
 }
 
 main.main.main-categories {
-    /* background: linear-gradient(180deg, #E5E5E5 0%, rgba(229, 229, 229, 0) 100px); */
     padding-top: 18px;
     text-align: center;
     color: #0D2B78;
+    margin-top: -19%;
+    position: relative;
+    z-index: 99998;
 }
 
 main.main.main-categories h1 {
@@ -2066,7 +2087,7 @@ main.main.main-categories h1 {
 
 main.main.main-categories h3 {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* max-width: 700px; */
     margin: auto;
     text-align: left;
@@ -2075,14 +2096,14 @@ main.main.main-categories h3 {
 main.main.main-categories h4 {
     margin: 25px auto;
     /* max-width: 700px; */
-    font-size: calc(1.275rem + .3vw);
+    font-size: 1.3rem;
     font-weight: 800;
     text-align: left;
 }
 
 main.main.main-categories h2 {
-    color: black;
-    font-size: 1.5rem;
+    /* color: white; */
+    font-size: 1.3rem;
     /* max-width: 700px; */
     margin: auto;
     text-align: left;
@@ -2092,9 +2113,25 @@ main.main.main-categories h2 {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lista-categories-prods > div  div.logo-image img {
+    width: 100%;
 }
 
-.lista-categories-prods > div {
+.lista-categories-prods > div > div > div.logo-image {
+    width: 50%;
+    height: 250px;
+    min-width: 325px;
+    overflow: hidden;
+}
+
+.category-tecnologias .lista-categories-prods > div > div > div.logo-image {
+    min-width: 153px;
+}
+.lista-categories-prods > div > div {
     margin-bottom: 10px;
     border-radius: 20px;
     display: flex;
@@ -2105,48 +2142,33 @@ main.main.main-categories h2 {
     background: linear-gradient(180deg, #2E62BA 0%, #1F0586 100%);
 }
 
-.lista-categories-prods > div.item-ultraplace {
-    background: url(../../assets/images/images-categories-prods/bg-ultraplace.png), linear-gradient(0deg, #FFFFFF 0%, #DBDBDB 0.01%, #000000 100%) !important;
-    background-size: contain;
-}
 
-.lista-categories-prods > div.item-ultramed {
-    background-color: #3E3B3A;
-    background-size: auto;
-    background-repeat: repeat-x;
-}
 
 .lista-categories-prods > div.lista-categories-prods > div {
     background-repeat: repeat-y;
     background-size: contain;
 }
 
-.lista-categories-prods > div.item-lipocavity {
-    background: linear-gradient(360deg, #525063 50%, #7C7D95 83.24%), #525063;
+.category-tecnologias  .lista-categories-prods > div {
+    max-width: 50%;
+    min-width: 270px;
 }
 
-.lista-categories-prods > div.item-lipocavity-new {background-color: #003963;}
-
-.lista-categories-prods > div.item-narniah {
-    background: radial-gradient(15.58% 33.6% at 0% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #4E0B6C;
+.category-tecnologias .lista-categories-prods {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 0;
 }
 
-.lista-categories-prods > div.item-omer-smart {
-    background-color: #1B0D59;
+.category-tecnologias .lista-categories-prods > div > div {
+    margin: 10px;
 }
 
-.lista-categories-prods > div.item-hakon {background-size: cover;}
 
-.lista-categories-prods > div.item-criodermis {
-    background: linear-gradient(130.33deg, #305BA1 10.84%, #2097D5 36.32%, #28589E 66.43%), #FFFFFF;
-    mix-blend-mode: multiply;
-}
 
-.lista-categories-prods > div.item-ethernia-cold {
-    background: radial-gradient(98.51% 98.51% at 50% 100%, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 71.35%, rgba(0, 0, 0, 0.2) 100%), #000000;
-}
-
-.lista-categories-prods > div > div {
+.lista-categories-prods > div > div > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2167,17 +2189,22 @@ main.main.main-categories h2 {
     padding: 0 32px;
 }
 
+.lista-categories-prods >  div>  div > div.logo-and-text h2 {
+    color: #fff;
+}
+
 .lista-categories-prods > div > div.logo-and-text img {
     max-width: 258px;
     width: 100%;
 }
 
-.lista-categories-prods > div > div.logo-and-text a {
+.lista-categories-prods > div> div > div.logo-and-text a {
     color: #fff;
     border: 1px solid;
     height: auto;
     padding: 10px;
     margin: 20px auto;
+    text-align: center;
 }
 
 .lista-categories-prods > div > div.logo-and-text a:hover {
@@ -2421,7 +2448,11 @@ section.carroussel-text .slick-track {
     color: #fff;
 }
 
-header button.navbar-toggler.toggler-mobile {
+img.header-filete {
+    width: 100%;
+}
+
+button.navbar-toggler.toggler-mobile {
     color: #230077;
     position: relative;
     width: 2.875rem;
@@ -2539,10 +2570,11 @@ header input.form-control.rounded-end.pe-5 {
 
 @media (max-width: 576px){
 header.header-style-1 {
-    padding-bottom: 161px;
+    padding-bottom: 188px;
     background: transparent url(../../assets/images/bg-header-mobile.png) center no-repeat;
     background-size: cover;
     background-position: top right;
+    margin-bottom: -39%;
 }
 
 .single-produtos .imagem-frente {
@@ -2781,7 +2813,28 @@ div#bs-example-navbar-collapse-1 {
     /* width: auto; */
     flex-grow: unset;
 }
+.header-style-0 .languages {
+    margin-bottom: -40px;
+    position: relative;
+    z-index: 9;
+}
 
+.header-style-0 .languages.mobile {
+    background: #fff;
+}
+
+.header-style-0 .menu-principal {
+    justify-content: space-around;
+    padding-left: 40px;
+}
+
+.header-style-0 div#bs-example-navbar-collapse-1 {
+    width: 100%;
+}
+
+.header-style-0 .menu-links.desktop {
+    width: 100%;
+}
 
 .link-topo {
     display: flex;
@@ -2789,6 +2842,7 @@ div#bs-example-navbar-collapse-1 {
     width: 100%;
     justify-content: center;
     padding: 12px 0px;
+    margin-top: 200px;
 }
 
 .link-topo a {
