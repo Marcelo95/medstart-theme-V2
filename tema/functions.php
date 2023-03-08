@@ -105,3 +105,12 @@ function getUrlThumbnailYoutube($link_video)
     $youtubeID = getYouTubeVideoId($link_video);
     return 'https://img.youtube.com/vi/' . $youtubeID . '/mqdefault.jpg';
 }
+
+function add_slug_body_class( $classes ) {
+    global $post;
+    if ( isset( $post ) ) {
+    $classes[] = $post->post_type . '-' . $post->post_name;
+    }
+    return $classes;
+    }
+    add_filter( 'body_class', 'add_slug_body_class' );

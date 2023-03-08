@@ -155,7 +155,7 @@ span.navbar-toggler-icon {
 
 }
 
-header {
+body > header {
     background: linear-gradient(42deg, #31F1C5 28.13%, #230077 70.96%);
     box-shadow: none;
     animation: bg-slide2 5s infinite alternate linear;
@@ -191,7 +191,9 @@ header.header-style-2 {
     background-position: bottom;
 }
 
-
+body.page-sobre {
+    background: url("../../assets/images/bg-page-sobre.png") top no-repeat;
+}
 
 
 header.header-style-1 {
@@ -5139,7 +5141,7 @@ span.details_1 {
 }
 
 .page-content h1 {
-    font-size: 32px;
+    /* font-size: 32px; */
     margin-bottom: 25px;
     font-weight: 700;
 }
