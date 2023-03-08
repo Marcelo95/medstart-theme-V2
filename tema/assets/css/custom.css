@@ -221,6 +221,10 @@ header.header-style-0.header-style-1 {
     top: 0 !important;
 }
 
+header.header-style-1.header-style-products {
+    position: absolute;
+}
+
 header .navbar-sticky {
     min-height: 112px;
 }
@@ -4331,6 +4335,7 @@ section.content-10-text h2 {
     text-align: center;
     padding: 25px;
     margin-top: 50px;
+    position: relative;
 }
 
 .lista-quad-itens {
