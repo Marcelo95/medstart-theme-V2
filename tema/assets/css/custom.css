@@ -86,6 +86,10 @@ section.products > .container > h2 {
     height: 83px;
 }
 
+.header-style-2 #collapseFormSearch {
+    height: auto;
+}
+
 .single-produtos #collapseFormSearch {
     background: transparent;
 }
@@ -161,6 +165,11 @@ header {
     background-size: 100%;
     position: relative;
     z-index: 99998;
+}
+
+header.header-style-2 {
+    margin-bottom: -30%;
+    z-index: inherit;
 }
 
 .bg-header-categorias {
