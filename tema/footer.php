@@ -5,7 +5,9 @@
     Topo
     </a>
 </div>
-<div class="bg-top-footer"></div>
+
+<img style="width:100%;" src="<?php echo asset("images/bg-footer.png"); ?>">
+
 <footer>
 
     <div class="container">

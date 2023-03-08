@@ -73,7 +73,7 @@ section.products > .container > h2 {
     font-weight: 700;
     font-size: 7vw;
     color: #230077;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     text-align: center;
 }
@@ -583,13 +583,14 @@ a.navbar-tool-icon-box.bg-secondary.dropdown-toggle i {
     animation: fade-in-bottom 1s ease-in-out both;
 }
 
-section.products {
-    margin-top: 73px;
-}
 
 section.products.box-blog {
-    background: #E9E9E9;
-    padding: 20px 0px;
+    margin-top: 52px;
+}
+
+.home-title-blof {
+    width: 72%;
+    margin-bottom: -7% !important;
 }
 
 
@@ -645,21 +646,43 @@ section.only-text {
     display: block;
 }
 
+.selos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.selos img {
+    margin: 23px;
+    height: auto;
+}
+
+.selos h2 {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0;
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    line-height: normal !important;
+}
+
 section.only-text > div h2 {
     line-height: 78px;
 }
 
 
 section.mapa-home {
-    background: linear-gradient(0deg, #2B6499, #2B6499);
+    background: #31F1C5;
     mix-blend-mode: multiply;
     padding: 20px;
     color: #fff;
 }
 
 section.mapa-home .botao-1 {
-    color: #fff;
-    border-color: #fff;
+    border-color: #0085FF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -682,6 +705,8 @@ section.mapa-home .container {
 
 section.mapa-home .container .col {
     min-width: 392px;
+    display: flex;
+    justify-content: end;
 }
 
 section.box-lancamento .wp-block-column {
@@ -709,7 +734,7 @@ section.box-lancamento .wp-block-column {
     font-weight: 700;
     font-size: 2.5rem;
     margin-top: 30px;
-    color: #0d6efd;
+    color: #241690;
 }
 
 .blog-box h5 {
@@ -738,7 +763,7 @@ section.box-lancamento .wp-block-column {
 }
 
 .post-template-default.single.single-post .container {
-    text-align: center;
+    /* text-align: center; */
 }
 
 
@@ -796,8 +821,9 @@ section.box-lancamento .wp-block-column {
 }
 
 .page-blog.archive article.first-post img {
-    /* width: 100%; */
+    width: 100%;
     height: auto;
+    margin-bottom: 13px;
 }
 
 .page-blog.archive .item-photo {
@@ -2095,7 +2121,7 @@ main.main.main-categories {
     padding-top: 18px;
     text-align: center;
     color: #0D2B78;
-    margin-top: -19%;
+    /* margin-top: -19%; */
     position: relative;
     z-index: 99998;
 }
@@ -2359,7 +2385,150 @@ section.carroussel-text .slick-track {
     bottom: -1px;
     left: -31px;
 }
+.home .slider-3 .slick-track > div:first-child:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: .5px;
+    height: 83%;
+    background: black;
+    bottom: 0;
+}
 
+.home .slider-3 .slick-slide {
+    position: relative;
+}
+section.box-unique-product.box-estilo-1 {
+    position: relative;
+    background: #230077;
+    overflow: hidden;
+}
+
+section.box-unique-product.box-estilo-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+section.box-unique-product.box-estilo-1 a {
+    color: #fff;
+    border-color: #fff;
+}
+
+section.box-unique-product.box-estilo-2:before {
+        content: '';
+        background: #31F1C5;
+        transform: rotate(345deg);
+        height: 128%;
+        width: 131%;
+        position: absolute;
+        border-bottom-left-radius: 129px;
+        border-bottom-right-radius: 130px;
+        left: -12%;
+        top: -83%;
+}
+
+section.box-unique-product.box-estilo-1:before {
+    content: '';
+    background: linear-gradient(359deg, #31F1C5 13.16%, #230077 65.68%);
+    transform: rotate(220deg);
+    height: 126%;
+    width: 43%;
+    position: absolute;
+    border-bottom-left-radius: 129px;
+    left: -38%;
+    top: -24%;
+}
+
+section.box-unique-product.box-estilo-1:after {
+    content: '';
+    background: linear-gradient(61deg, #31F1C5 13.16%, #230077 65.68%);
+    transform: rotate(323deg);
+    height: 72%;
+    width: 43%;
+    position: absolute;
+    right: -37%;
+    top: 16%;
+}
+
+section.box-unique-product.box-estilo-1 h2 {
+    color: #fff;
+}
+
+section.box-unique-product.box-estilo-1 .details_1 {
+    color: #fff;
+}
+
+
+section.box-unique-product h2 {
+    font-size: xxx-large;
+    font-weight: 800;
+}
+
+.box-prod-unique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.box-prod-unique > img {
+    width: 100%;
+    max-width: 600px;
+}
+section.home-facilite-sua-vida:before {
+    background: #230077;
+    content: '';
+    width: 78%;
+    height: 100%;
+    position: absolute;
+    border-top-right-radius: 76%;
+}
+
+section.home-facilite-sua-vida {
+    position: relative;
+}
+
+section.home-facilite-sua-vida .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.home-facilite-sua-vida .container > .col {
+    min-width: 373px;
+}
+
+
+section.home-facilite-sua-vida .container > .col.col-small img {
+    width: 100%;
+    min-width: auto;
+    margin: 0;
+}
+
+img {}
+
+section.home-facilite-sua-vida .container h2 span {
+    font-size: calc(2em - 1vw);
+    margin-bottom: 27px;
+    display: block;
+    font-weight: 900;
+    color: #31F1C5;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+section.home-facilite-sua-vida .container .box-text-left {
+    margin: 0;
+    text-align: left;
+}
+
+section.home-facilite-sua-vida .container .box-text-left a {
+    color: #fff;
+    border-color: #fff;
+}
 @media (max-width: 1000px){
 
     section.quais-tecnologias img {
@@ -2751,7 +2920,7 @@ div#header_menu_all_departments_top a:hover {
     color: #ffffff;
     font-size: 17px;
     font-weight: 600;
-    padding: 4px;
+    padding: 4px 15px !important;
 }
 
 a.dropdown-item {
@@ -2863,7 +3032,9 @@ div#bs-example-navbar-collapse-1 {
     width: 100%;
     justify-content: center;
     padding: 12px 0px;
-    margin-top: 200px;
+    margin-top: 5%;
+    margin-bottom: -13%;
+    position: relative;
 }
 
 .link-topo a {
@@ -4026,6 +4197,7 @@ section.box-lancamento.estilo-1 {
 
 .box-text-left {
     max-width: 335px;
+    color: #230077;
 }
 
 .box-text-left span.maior {
@@ -4106,8 +4278,6 @@ section.box-lancamento.estilo-1 {
 }
 
 .content-10-text .box-center {
-    background: url();
-    /* padding: 76px 10px; */
     text-align: center;
     color: #230077;
     display: flex;
@@ -4235,7 +4405,9 @@ section.content-10-text h2 {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+section.home-facilite-sua-vida .container h2 span {
+    font-size: calc(2em - 3vw);
+}
     .menu-principal a {
     color: #230077;
 }
@@ -4339,11 +4511,21 @@ section.categorias {
 .item-photo {
     width: 296px;
     height: 243px;
-    background-color: #ffffff !important;
+    /* background-color: #ffffff !important; */
     margin-bottom: 27px;
     border-radius: 42px;
     overflow: hidden;
     box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25);
+}
+
+.home .item-photo {
+    width: 506px;
+    height: 548px;
+    background: #d0d2d9;
+    margin-bottom: 27px;
+    box-shadow: none;
+    opacity: 1 !important;
+    margin: 40px;
 }
 
 .box-novidades {
@@ -4369,7 +4551,21 @@ span.details_1 {
     font-style: normal;
 }
 
-.details_2 {color: #0085FF;font-size: 1.1rem;font-weight: 700;margin: 12px 0;text-transform: uppercase;display: flex;align-items: center;}
+.details_2 {color: #230077;font-size: 1.1rem;font-weight: 700;margin: 12px 0;text-transform: uppercase;display: flex;align-items: center;}
+
+.home .slider-2 .details_2 {
+    color: #230077;
+    font-size: 42px;
+    font-weight: 900;
+    margin: 12px 0;
+    text-transform: uppercase;
+    word-break: break-all;
+    display: block;
+}
+
+.home .box-item-prod:hover h2 {
+    color: #230077;
+}
 
 .details_2 i {
     font-size: 1.4rem;
@@ -4393,6 +4589,17 @@ span.details_1 {
     /* min-width: 200px; */
 }
 
+.home .box-item-prod {
+    width: 100%;
+    padding: 25px;
+    margin-right: 10px;
+    display: flex !important;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+}
+
 .box-item-prod:hover h2 {color: black;}
 
 .box-item-prod:hover .item-photo {
@@ -4402,7 +4609,7 @@ span.details_1 {
 .box-item-prod .all-details {
     display: flex;
     flex-direction: column;
-    max-width: 220px;
+    max-width: 266px;
 }
 
 
@@ -4471,7 +4678,8 @@ section.content-nossas-tecologia h2 {
 }
 
 section.content-nossas-tecologia {
-    margin: 51px 0px;
+    padding: 51px 0px;
+    background: rgba(217, 217, 217, 0.21);
 }
 
 .catalogos {
@@ -4587,12 +4795,13 @@ section.catalogos .block-left h2 span {
 }
 
 .area {
-    background: white;
+    /* background: white; */
     width: 512px;
     padding: 20px;
     margin-bottom: 20px;
     max-width: 100%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    text-align: center;
 }
 
 @media (max-width: 1120px){
@@ -4617,14 +4826,18 @@ section.catalogos .block-left h2 span {
 .slider-3 .box-item-prod .all-details {
     /* margin: 13px; */
     text-align: left;
+    max-width: 90%;
+    text-align: center;
 }
 
 .slider-3 h2 {
     margin-bottom: 16px;
     margin-top: 24px;
-    color: #0085FF;
-    font-size: 1.1rem;
+    color: #230077;
+    font-size: xx-large;
     font-weight: 700;
+    display: block;
+    text-transform: capitalize;
 }
 
 .slider-3 .item-photo {
@@ -4816,7 +5029,12 @@ section.comentarios > .container {
 .desktop {
     display: none!important;
 }
-  
+ .home .slider-2 .item-photo {
+    margin-bottom: 0;
+    height: 350px;
+    width: 350px;
+    background-position: center bottom !important;
+} 
 header .navbar-sticky {min-height: 85px;}
 
 .menu-principal {
@@ -4837,7 +5055,7 @@ header .navbar-sticky {min-height: 85px;}
     align-items: baseline;
 }
 
-  .box-item-prod {
+  .box-item-prod, .home .box-item-prod {
     flex-direction: column;
 }
 
@@ -4862,7 +5080,7 @@ span.details_1 {
   h1.header-title.font-1 {
     padding: 20px;
     font-size: 43px;
-    margin-bottom: -100px;
+    /* margin-bottom: -100px; */
 }
 
   .bg-top-footer {
@@ -4873,7 +5091,7 @@ span.details_1 {
 }
 
 @media (max-width: 446px){
-  .item-photo {
+  .item-photo, .home .item-photo {
     height: 305px;
     width: 273px;
     background-position: center bottom !important;
@@ -4932,7 +5150,7 @@ span.details_1 {
 }
 
 .page-content p {
-    color: #241690;
+    color: #504848;
 }
 
 .page-content b, .page-content strong {
@@ -5134,5 +5352,45 @@ title-top-prod {
 section.transdutoress {
     padding-top: 16px;
 }
-    
+.home .slider-3 .slick-track > div:first-child:after {
+    display: none;
+}
+    .slider-3 .item-photo {
+    height: 200px;
+}
+   section.home-facilite-sua-vida:before {
+    border-radius: 0;
+    width: 100%;
+}
+
+section.home-facilite-sua-vida {/* padding-top: 25px; */}
+
+section.home-facilite-sua-vida .container h2 span {
+    text-align: center;
+    font-size: unset;
+    margin-top: 27px;
+}
+
+section.home-facilite-sua-vida .container > .col.col-small img {
+    max-width: 281px;
+    margin: auto;
+    display: block;
+}
+
+section.home-facilite-sua-vida .container {
+    align-items: flex-end;
+}
+
+section.home-facilite-sua-vida .container .box-text-left {
+    padding: 20px;
+    text-align: center;
+}
+
+section.home-facilite-sua-vida .container .box-text-left a {
+    margin: auto;
+}
+
+section.home-facilite-sua-vida .container > .col {
+    min-width: 100%;
+} 
 }

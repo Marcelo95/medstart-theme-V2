@@ -1,4 +1,4 @@
-<?php get_header("categorias"); ?>
+<?php get_header(); ?>
 
 <?php
 
@@ -16,7 +16,7 @@ $categories = get_categories($args);
 ?>
 
 <main class="main main-categories">
-    <div class="mt-4 container desktop">
+    <div class=" container desktop">
         <?php custom_breadcrumbs(); ?>
     </div>
 

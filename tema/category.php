@@ -1,4 +1,4 @@
-<?php get_header("categorias");
+<?php get_header();
 $current_term = get_category(get_query_var('cat'));
 
 $current_category = get_queried_object(); ////getting current category
@@ -17,7 +17,7 @@ $the_query = new WP_Query($args);
 <main class="main main-categories">
 
 
-<div class="mt-5 container desktop">
+<div class="container desktop">
 	<?php custom_breadcrumbs(); ?>
 </div>
 
