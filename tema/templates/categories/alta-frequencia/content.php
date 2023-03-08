@@ -10,4 +10,4 @@
 
 
 <h2>
-    Confira a linha da MedStart e aumente  seu faturamento!</h2>
+    Confira a linha da MedStart e aumente seu faturamento!</h2>

@@ -1,13 +1,13 @@
-<h1> Alta Frequência
+<h1> Vacuoterapia
 </h1>
 <h3>
-    Tecnologia multifuncional com aplicação facial, capilar e na área da podologia. O encontro da frequência de alta tensão e diferentes eletrodos de vidro gera ozônio, que tem ação oxigenante, bactericida e fungicida, entre outras.
+
+    Tratamento não invasivo de sucção por meio de ventosas que estimula a maior circulação sanguínea, o metabolismo e aumenta a produção de colágeno. Ideal para combater celulites, gordura localizada, flacidez, em tratamentos pré e pós-operatórios e muito mais.
 </h3>
 
 
-<h4>
-    Versatilidade em diversos tratamentos!</h4>
+<h4>Um ar de modernidade aos seus tratamentos!</h4>
 
 
 <h2>
-    Confira a linha da MedStart e aumente  seu faturamento!</h2>
+    Confira a linha da MedStart e aumente seu faturamento!</h2>
