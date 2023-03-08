@@ -47,6 +47,11 @@ section.products > .container > h2 {
     top: 32px !important;
 }
 
+.is_admin_bar_showing header.header-style-1.header-style-products {
+    position: absolute;
+    top: 32px !important;
+}
+
 .is_admin_bar_showing div#navbarCollapse {
     top: 32px;
 }

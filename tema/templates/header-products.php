@@ -1,6 +1,12 @@
-<header class="header-style-1 js-scroll fade-in scrolled">
+<header class="header-style-0 header-style-products header-style-1 js-scroll fade-in scrolled">
 
     <div class="navbar-sticky shadow-sm-disable ">
+        <div class="container">
+            <div class="languages desktop">
+                <?php echo do_shortcode('[language-switcher]'); ?>
+
+            </div>
+        </div>
 
         <div class="navbar navbar-expand-lg nav-top">
             <div class="container">
@@ -18,6 +24,15 @@
                     <img class="logo" src="<?php echo asset('images/logo.png'); ?>" alt="Logo">
                 </a>
 
+                <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+
+                    <button class="navbar-toggler toggler-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <i class="material-icons" style="font-size: 36px;margin-left: -7px;">menu</i>
+
+                    </button>
+
+
+                </div>
                 <div class="menu-links desktop">
                     <!-- Primary menu-->
                     <?php menu1(); ?>
@@ -35,50 +50,12 @@
                     </div>
                 </div>
 
-                <div class="languages desktop">
-                    <?php echo do_shortcode('[language-switcher]'); ?>
-
-                </div>
 
 
 
-                <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
-
-                    <button class="navbar-toggler toggler-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <i class="material-icons" style="font-size: 36px;margin-left: -7px;">menu</i>
-
-                    </button>
-
-
-                </div>
             </div>
         </div>
-        <div class="navbar navbar-expand-lg nav-bottom mt-n2 pt-0 pb-2">
-            <div class="collapse navbar-collapse navbar-stuck-menu " id="navbarCollapse">
-                <div class="container">
 
-                    <button class="navbar-toggler toggler-mobile float-end m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="true" aria-controls="navbarCollapse">
-                        <i class="material-icons" style="font-size: 36px;margin-left: -7px;">close</i>
-                    </button>
-                    <!-- Search-->
-                    <form action="<?php echo home_url(); ?>" class="input-group d-lg-none my-3">
-                        <input name="s" class="form-control rounded-start" type="text" placeholder="Pesquisar por...">
-                        <button type="submit" class="style-hidden-button"><i class="material-icons position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3">search</i></button>
-                    </form>
-
-                    <div class="menu-links mobile">
-                        <!-- Primary menu-->
-                        <?php menu1(); ?>
-                    </div>
-
-
-                </div>
-                <div class="languages mobile">
-                    <?php echo do_shortcode('[language-switcher]'); ?>
-
-                </div>
-            </div>
-        </div>
     </div>
     <?php if (get_post_type() == "produtos" && is_single()) : ?>
         <div class="container desktop">
@@ -87,3 +64,30 @@
     <?php endif; ?>
 
 </header>
+
+<div class="navbar navbar-expand-lg nav-bottom mt-n2 pt-0 pb-2">
+    <div class="collapse navbar-collapse navbar-stuck-menu " id="navbarCollapse">
+        <div class="container">
+
+            <button class="navbar-toggler toggler-mobile float-end m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="true" aria-controls="navbarCollapse">
+                <i class="material-icons" style="font-size: 36px;margin-left: -7px;">close</i>
+            </button>
+            <!-- Search-->
+            <form action="<?php echo home_url(); ?>" class="input-group d-lg-none my-3">
+                <input name="s" class="form-control rounded-start" type="text" placeholder="Pesquisar por...">
+                <button type="submit" class="style-hidden-button"><i class="material-icons position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3">search</i></button>
+            </form>
+
+            <div class="menu-links mobile">
+                <!-- Primary menu-->
+                <?php menu1(); ?>
+            </div>
+
+
+        </div>
+        <div class="languages mobile">
+            <?php echo do_shortcode('[language-switcher]'); ?>
+
+        </div>
+    </div>
+</div>
