@@ -30,4 +30,4 @@
 
 <body <?php body_class(is_admin_bar_showing() ? "is_admin_bar_showing" : ""); ?>>
 
-        <?php get_template_part("templates/header-home");?>
+        <?php get_template_part("templates/header-categorias");?>
