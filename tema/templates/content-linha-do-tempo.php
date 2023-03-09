@@ -131,7 +131,8 @@
 
 
     <script>
-        var startX;
+       if(  /Mobi/i.test(window.navigator.userAgent) == false){
+         var startX;
         var scrollLeft;
         var isDragging = false;
         var minhaDiv = document.getElementById("linha-scroll");
@@ -171,7 +172,7 @@
 
         minhaDiv.addEventListener("touchend", function() {
             isDragging = false;
-        });
+        });}
     </script>
 
 
