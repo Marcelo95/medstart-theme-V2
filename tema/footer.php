@@ -66,7 +66,7 @@
 
         <div id="footer-bloco-level-1">
 
-            <?php echo _("Medical San 2023. Todos Os Direitos Reservados."); ?>
+            <?php echo _("MedStart 2023. Todos Os Direitos Reservados."); ?>
 
         </div>
 
