@@ -5648,6 +5648,7 @@ div#linha-scroll {
 .item_top img {
     width: 100%;
     height: auto;
+    background: #230077;
 }
 
 .linha-item:nth-child(2n) .item_top {
