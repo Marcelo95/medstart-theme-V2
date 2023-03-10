@@ -3,6 +3,7 @@
 
 include __DIR__ . "/cmb2/init.php";
 
+
 add_action('cmb2_admin_init', 'yourprefix_register_demo_metabox');
 function yourprefix_register_demo_metabox()
 {
@@ -175,12 +176,16 @@ function metabox_for_produtos()
       'name' => __('Vídeo de treinamento', 'cmb2'),
       'desc' => __('Link para página ou arquivo', 'cmb2'),
       'id' => $prefix . 'link_videos_de_treinamento',
-      'type' => 'text_url',
+      'type' => 'wysiwyg',
       'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
       // Array of allowed protocols
       'attributes' => array(
         'placeholder' => 'Digite aqui',
-      )
+      ),
+      'options' => array(
+        'wpautop' => true,
+        'editor' => 'bold-builder',
+    ),
     )
   );
 }
