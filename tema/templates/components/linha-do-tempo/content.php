@@ -1,5 +1,7 @@
 
-<link rel="stylesheet" href="<?php _e( asset( sprintf("../templates/components/%s/style.css", basename(__DIR__) ) )); ?>">
+<?php if( $args["first_run"] ): ?>
+    <link rel="stylesheet" href="<?php _e(asset(sprintf("../templates/components/%s/style.css", basename(__DIR__)))); ?>">
+<?php endif; ?>
 <?php $linha_do_tempo = [
     [
         "ano" => 1994,

@@ -15,7 +15,7 @@
 </section>
 
 
-<?php get_template_part("templates/components/linha-do-tempo/content"); ?>
+<?php do_action("LinhaDoTempoComponent"); ?>
 
 
 <?php get_footer(); ?>
