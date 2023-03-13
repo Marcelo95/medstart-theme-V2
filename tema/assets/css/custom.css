@@ -657,28 +657,6 @@ section.only-text {
     display: block;
 }
 
-.selos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.selos img {
-    margin: 23px;
-    height: auto;
-}
-
-.selos h2 {
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 0;
-    font-size: large;
-    margin: 10px;
-    padding: 10px;
-    height: auto;
-    line-height: normal !important;
-}
 
 section.only-text > div h2 {
     line-height: 78px;

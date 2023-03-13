@@ -186,25 +186,7 @@ if (count($itens)) : ?>
 <?php endif; ?>
 
 
-<section class="only-text text-center js-scroll  fade-in-bottom">
-    <div class="container">
-        <p>
-            Todos os produtos têm selos de qualidade
-        </p>
-        <div class="selos">
-            <h2>ICBR INMETRO</h2>
-            <h2>ABNT</h2>
-            <h2>ANVISA</h2>
-        </div>
-        <div class="selos selos-images">
-            <img src="<?php echo asset("images/selos/ncc.png"); ?>" alt="NCC">
-            <img src="<?php echo asset("images/selos/iso.png"); ?>" alt="ISO-13485-2016">
-            <img src="<?php echo asset("images/selos/gptw.png"); ?>" alt="GPTW">
-            <img src="<?php echo asset("images/selos/patente.png"); ?>" alt="Patente Verde">
-        </div>
-    </div>
-</section>
-
+<?php do_action("SelosDeQualidadeComponent");  ?>
 
 <section class="home-facilite-sua-vida">
     <div class="container ">
