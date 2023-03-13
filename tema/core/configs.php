@@ -38,9 +38,9 @@ function asset($filename)
 
 function asset_image_background($filename, $no_image = false)
 {
-    $more = "";
+    $more = "background-color: transparent !important;";
     if(!$filename && $no_image) {
-        $more = "background-color: transparent !important;";
+        $more = "";
         $filename = "images/no-image.svg";
     };
     if(!$filename) return "";
@@ -48,6 +48,7 @@ function asset_image_background($filename, $no_image = false)
     $filename = str_contains($filename, "http") ? $filename : asset($filename);
     return sprintf(' style="background: url(%s) center no-repeat; background-size: cover;color:transparent; %s" ', $filename, $more);
 }
+
 
 
 function get_taxnomie($terms)
