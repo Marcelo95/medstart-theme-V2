@@ -42,6 +42,7 @@ section.products > .container > h2 {
 
 .page-blog.archive img {
     max-width: 100%;
+    border-radius: 20px;
 }
 .is_admin_bar_showing header.header-style-1 {
     top: 32px !important;
@@ -215,6 +216,10 @@ header.header-style-1 {
     position: relative;
     z-index: 99998;
     margin-top: -3%;
+}
+
+section.container.main-page.archive.page-blog {
+    max-width: 880px;
 }
 header.header-style-0.header-style-1 {
     position: relative;
@@ -751,10 +756,6 @@ section.box-lancamento .wp-block-column {
     text-align: right;
 }
 
-.post-template-default.single.single-post .container {
-    /* text-align: center; */
-}
-
 
 .archive article {
     display: flex;
@@ -769,10 +770,12 @@ section.box-lancamento .wp-block-column {
 
 .archive article h2 {
     font-size: 1.2rem;
+    margin: 10px 0px;
 }
 
 .archive article.first-post h2 {
     font-size: 3rem;
+    margin: 10px 0px;
 }
 
 .page-blog.archive article.first-post h2 a {
@@ -801,7 +804,7 @@ section.box-lancamento .wp-block-column {
 
 .page-blog.archive article {
     background: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #0000000d;
     padding: 22px 0;
 }
 
