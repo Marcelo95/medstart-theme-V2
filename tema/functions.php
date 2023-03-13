@@ -16,6 +16,16 @@ include __DIR__ . "/core/plugins/index.php";
 @ini_set('max_execution_time', '300');
 
 
+
+function dd($v)
+{
+    echo '<pre>';
+    var_dump($v);
+    echo '</pre>';
+}
+
+
+
 add_filter('query_vars', 'addnew_query_vars', 10, 1);
 function addnew_query_vars($vars)
 {
@@ -124,7 +134,7 @@ function cmb2_texto( $content) {
     global $wp_embed;
     $content = $wp_embed->autoembed( $content );
     $content = $wp_embed->run_shortcode( $content );
-    $content = wpautop( $content );
+    //$content = wpautop( $content );
     $content = do_shortcode( $content );
 
     return $content;

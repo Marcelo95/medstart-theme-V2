@@ -109,6 +109,7 @@ function metabox_for_produtos()
       'id' => $prefix . 'link_duvida_frequentes',
       'type' => 'wysiwyg',
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
       'attributes' => array(
@@ -123,6 +124,7 @@ function metabox_for_produtos()
       'id' => $prefix . 'link_ficha_tecnica',
       'type' => 'wysiwyg',
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
       'attributes' => array(
@@ -138,6 +140,7 @@ function metabox_for_produtos()
       'id' => $prefix . 'link_manual_de_instrucao',
       'type' => 'wysiwyg',
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
       'attributes' => array(
@@ -153,6 +156,7 @@ function metabox_for_produtos()
       'id' => $prefix . 'link_assistencia_express',
       'type' => 'wysiwyg',
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
       'attributes' => array(
@@ -168,6 +172,7 @@ function metabox_for_produtos()
       'id' => $prefix . 'link_guia_rapido',
       'type' => 'wysiwyg',
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
       'attributes' => array(
@@ -186,6 +191,7 @@ function metabox_for_produtos()
         'placeholder' => 'Digite aqui',
       ),
       'options' => array(
+        'wpautop' => false,
         'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
       ),
     )
