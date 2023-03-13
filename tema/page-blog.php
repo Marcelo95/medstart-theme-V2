@@ -7,7 +7,7 @@
 
 		<?php
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-		$args = array('posts_per_page' => 10, 'paged' => $paged, 'post_type' => 'post');
+		$args = array('s' => get_query_var('s'),'posts_per_page' => 10, 'paged' => $paged, 'post_type' => 'post');
 		query_posts($args);
 
 

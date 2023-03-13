@@ -1,6 +1,21 @@
+<?php
+
+$post_type = (get_query_var('post_type')) ? get_query_var('post_type') : false;
+
+if($post_type && $post_type == "post"): ?>
+
+
+
+<?php get_template_part( 'page-blog' ); ?>
+
+
+
+<?php  else: ?>
+
+
 <?php get_header(); ?>
 
-<section class="container main-page archive">
+<section class="container archive">
 
 	<div class="mt-5 mb-5">
 	<h1><?php echo sprintf(__('Você pesquisou por "%s"'), get_search_query(), $wp_query->found_posts); ?></h1>
@@ -18,3 +33,6 @@
 </section>
 
 <?php get_footer(); ?>
+
+
+<?php  endif; ?>
