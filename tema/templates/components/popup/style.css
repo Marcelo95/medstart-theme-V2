@@ -14,6 +14,8 @@
     line-height: 13px;
 }
 
+
+
 .myPopup .modal-title {
     color: #230077;
     text-transform: uppercase;
@@ -25,6 +27,37 @@
     align-items: center;
 }
 
+
+.myPopup .wp-video {
+    width: 100%;
+  min-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+div#duvidas_frequentes p {
+    margin: 13px  15px;
+}
+
+div#duvidas_frequentes p:nth-child(2n+1) {
+    font-weight: bold;
+}
+
+.myPopup .wp-video .mejs-container {
+	width: 100% !important;
+	min-width: 100% !important;
+	min-height: 400px;
+	max-height: 400px !important;
+}
+
+.myPopup .wp-video video {
+  width: 100% !important;;
+  height: 100% !important;;
+}
 .myPopup .modal-title i {
     margin-right: 5px;
 }
@@ -34,6 +67,67 @@
 
 .myPopup {
     z-index: 9999999;
+}
+
+div#manual_de_instrucoes .modal-body {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#manual_de_instrucoes a {
+    min-width: 223px;
+    margin: 10px;
+}
+
+.myPopup iframe {
+    min-width: 100%;
+}
+
+.myPopup ul.slick-dots {
+    border: 0;
+    margin-top: 10px;
+    position: relative;
+}
+
+div#eficacia {
+    text-align: center;
+}
+
+div#eficacia table {
+    background: #0085FF;
+    border-radius: 20px;
+    color: #fff;
+    max-width: 90%;
+    margin: auto;
+    font-weight: 600;
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+}
+
+div#eficacia .description {
+    margin: 25px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+div#eficacia  h2 {
+    margin-bottom: 36px;
+}
+
+div#eficacia table h3 {
+    text-transform: uppercase;
+    margin: 24px 0;
+    font-family: 'Gotham', sans-serif;
+}
+
+div#eficacia table img {
+    margin-bottom: 26px;
+}
+
+div#eficacia table img {
+    max-width: 100%;
 }
 
 
@@ -58,6 +152,7 @@ table tr {
 table th,
 table td {
   padding: .625em;
+  vertical-align: baseline;
 }
 
 table th iframe, table td iframe {
