@@ -161,3 +161,9 @@ foreach ($files as $file) {
         }, 10, 1);
     }
 }
+
+
+function custom_shortcode_onde_estamos() {
+    do_action("OndeEstamosComponent");
+}
+add_shortcode( 'onde-estamos', 'custom_shortcode_onde_estamos' );
