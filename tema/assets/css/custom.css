@@ -4398,7 +4398,8 @@ section.content-10-text h2 {
 
 .init-videos iframe {
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
+    max-width: 826px;
 }
 
 .bg-azul .lista-quad-itens > div:last-child {
