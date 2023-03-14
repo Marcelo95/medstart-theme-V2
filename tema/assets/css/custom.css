@@ -4396,6 +4396,11 @@ section.content-10-text h2 {
     padding: 8px 16px;
 }
 
+.init-videos iframe {
+    width: 100%;
+    min-height: 300px;
+}
+
 .bg-azul .lista-quad-itens > div:last-child {
     width: 100%;
     max-width: 100%;

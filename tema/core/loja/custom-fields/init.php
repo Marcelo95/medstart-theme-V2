@@ -89,12 +89,14 @@ function metabox_for_produtos()
 
   $cmb_demo->add_field(
     array(
-      'name' => __('Vídeo de como funciona (Youtube)', 'cmb2'),
-      'desc' => __('Link do vídeo (Youtube)', 'cmb2'),
+      'name' => __('Como funciona', 'cmb2'),
+      'desc' => __('Como funciona', 'cmb2'),
       'id' => $prefix . 'link_videos_de_como_funciona',
-      'type' => 'text_url',
-      'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'),
-      // Array of allowed protocols
+      'type' => 'wysiwyg',
+      'options' => array(
+        'wpautop' => false,
+        'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
+      ),
       'attributes' => array(
         'placeholder' => 'Digite aqui',
       )
