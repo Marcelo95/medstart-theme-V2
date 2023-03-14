@@ -2341,19 +2341,33 @@ section.carroussel-text .slick-track {
     align-items: center;
     width: 100%;
     position: relative;
-    margin-top: -36px;
     margin-bottom: 30px;
+}
+
+.apresentacao-e-lista > div.two-images {width: 52%;}
+
+.apresentacao-e-lista > div.text-img {
+    /* width: 22%; */
+}
+
+.apresentacao-e-lista > div.text-img h2 {
+    position: relative;
+    right: 0;
+    left: -128px;
+    top: 17px;
+    font-size: 27px;
+    text-shadow: 0px 17.7002px 17.7002px rgba(0, 0, 0, 0.25);
 }
 
 
 .apresentacao-e-lista img {
     position: relative;
     z-index: 1;
-    width: 38%;
+    width: 100%;
     min-width: 209px
 }
 
-.apresentacao-e-lista ul {list-style: none;padding: 0;margin-left: -25px;padding-top: 20px;}
+.apresentacao-e-lista ul {list-style: none;padding: 0;margin-left: -25px;padding-top: 76px;}
 
 .apresentacao-e-lista ul li {
     border-bottom: 1px solid #fff;
@@ -2519,6 +2533,25 @@ section.home-facilite-sua-vida .container .box-text-left {
 section.home-facilite-sua-vida .container .box-text-left a {
     color: #fff;
     border-color: #fff;
+}
+
+@media(min-width:1380px){
+    .single-produtos .imagem-frente.isdesktop {
+    max-height: 800px;
+    margin-left: auto;
+    width: auto;
+    display: block;
+}
+}
+
+@media(min-width:2156px){
+    .single-produtos .imagem-frente.isdesktop {
+    max-height: 1200px;
+    margin-left: auto;
+   
+    width: auto;
+    display: block;
+}
 }
 @media (max-width: 1000px){
 
@@ -4278,6 +4311,7 @@ section.box-lancamento.estilo-1 {
     margin: auto;
     width: 100%;
     min-height: 386px;
+    margin-bottom: 30px;
 }
 
 .content-10-text .box-center p {
@@ -4316,6 +4350,12 @@ section.content-10-text h2 {
     padding: 25px;
     margin-top: 50px;
     position: relative;
+}
+
+@media(min-width:994px){ /*responsive*/
+    .bg-azul.by-single-produtos {
+    border-top-right-radius: 25%;
+}
 }
 
 .lista-quad-itens {
@@ -5143,6 +5183,11 @@ span.details_1 {
 
 .page-content p {
     color: #504848;
+}
+
+
+.single-produtos .category-desc p, .single-produtos .category-desc strong {
+    max-width: none;
 }
 
 .page-content b, .page-content strong {

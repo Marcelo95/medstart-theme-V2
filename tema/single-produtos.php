@@ -24,7 +24,7 @@ get_header(); ?>
         <div class="container ">
 
 
-            <div class="text-default js-scroll fade-in-bottom">
+            <div class="text-default js-scroll fade-in-bottom scrolled">
                 <?php get_template_part(sprintf("templates/produtos/%s/content", get_post_field('post_name', get_post())), "priority"); ?>
             </div>
 
@@ -35,19 +35,16 @@ get_header(); ?>
 
             </p>
 
-            <img class="js-scroll fade-in-bottom d-block m-auto mb-4 mt-4 desktop" style="width:100%;" src="<?php echo asset(sprintf("../templates/produtos/%s/images/banner-chamada.png", get_post_field('post_name', get_post()))); ?>">
-
-
 
         </div>
 
         <img class="js-scroll fade-in-bottom d-block mobile mt-4" style="width:100%;margin-bottom: -50px;" src="<?php echo asset(sprintf("../templates/produtos/%s/images/banner-chamada-mobile.png", get_post_field('post_name', get_post()))); ?>">
 
-        <div class="bg-azul">
+        <div class="bg-azul by-single-produtos  js-scroll fade-in-bottom scrolled">
 
             <div class="container">
 
-                <?php get_template_part("templates/produtos/content-itens"); ?>
+                <?php get_template_part("templates/content-itens-default"); ?>
 
 
 
@@ -65,9 +62,8 @@ get_header(); ?>
 
 
 
-        <div class="js-scroll fade-in-bottom">
-            <?php get_template_part("templates/produtos/content-10"); ?>
-        </div>
+        <?php get_template_part(sprintf("templates/produtos/%s/content-antes-e-depois", get_post_field('post_name', get_post()))); ?>
+
 
         <?php do_action("EntendaMaisComponent"); ?>
 

@@ -28,11 +28,11 @@ $html_popup = '
         </tr>
             <tr>
             <td colspan="2">
-            <span>' . $args["name1"]  . '</span>
+            <span>' . ($args["name"] ?? '') . '</span>
         </td></tr>
         </table>
         <br>
-        <p class="description">' . $args["description"] . '</p>
+        <p class="description">' . ($args["description"] ?? '') . '</p>
     ';
 
 
